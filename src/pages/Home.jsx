@@ -20,9 +20,17 @@ function Home() {
         <div className=" w-187.5 flex flex-col justify-center items-center">
           <img src={home} className="w-125" />
         </div>
+
+
+        
       </div>
 
-      <MenuFilter />
+      <div className="flex w-300 h-20 items-center justify-center  m-auto mt-20  ">
+
+                <MenuFilter />
+
+        </div>
+                
     </>
   );
 }
