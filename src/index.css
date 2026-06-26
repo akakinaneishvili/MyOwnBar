@@ -9,3 +9,11 @@
   --color-card: rgba(255, 255, 255, 0.85);
   --color-imgBg: #eef3ee;
 }
+
+body {
+  @apply bg-main relative min-h-screen;
+}
+
+body::before {
+  @apply content-[""] absolute inset-0 bg-[url('/lemons.png')] bg-no-repeat opacity-30 -z-10 pointer-events-none;
+}

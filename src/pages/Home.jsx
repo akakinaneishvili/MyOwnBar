@@ -6,10 +6,7 @@ function Home() {
   return (
     <>
       <div
-        className="relative min-h-screen  isolate
-        before:content-[''] before:absolute before:inset-0 
-        before:bg-[url('/lemons.png')] before:bg-left before:bg-no-repeat before:bg-size-[auto_100%] 
-        before:opacity-20 before:-z-10"
+       
       >
         <div className="w-375 m-auto flex justify-around  md:flex-row items-center  pt-16 ">
           <div className="w-full md:w-1/2 flex flex-col  text-left">

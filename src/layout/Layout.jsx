@@ -5,7 +5,7 @@ import Header from "./Header";
 function Layout() {
   return (
     <>
-      <div className="bg-main min-h-screen">
+      <div >
         <Header />
         <main>
           <Outlet />
