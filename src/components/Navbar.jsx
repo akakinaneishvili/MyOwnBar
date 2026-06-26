@@ -36,7 +36,7 @@ function Navbar() {
                     className={({ isActive }) =>
                       `transition-all duration-200 hover:text-hover ${
                         isActive
-                          ? "border-b-2 border-accent text-accent pb-1 font-bold "
+                          ? "border-b-2 border-accent text-accent pb-1 font-bold"
                           : "opacity-85"
                       }`
                     }

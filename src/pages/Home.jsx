@@ -1,36 +1,58 @@
 import { useState } from "react";
-import home from "../../public/Layer-1.png";
 import MenuFilter from "../components/MenuFilter";
+import Cards from "../components/Cards";
 
 function Home() {
   return (
     <>
-      <div className="flex w-375 m-auto pt-16 ">
-        <div className=" w-187.5 h-125 flex flex-col items-center justify-center px-10 ">
-          <p className="text-5xl font-bold pb-9 text-text leading-tight">
-            გახდი საკუთარი ბარის მთავარი
-            <span className="text-accent"> მიქსოლოგი</span>
-          </p>
+      <div
+        className="relative min-h-screen  isolate
+        before:content-[''] before:absolute before:inset-0 
+        before:bg-[url('/lemons.png')] before:bg-left before:bg-no-repeat before:bg-size-[auto_100%] 
+        before:opacity-20 before:-z-10"
+      >
+        <div className="w-375 m-auto flex justify-around  md:flex-row items-center  pt-16 ">
+          <div className="w-full md:w-1/2 flex flex-col  text-left">
+            <p className="text-4xl md:text-5xl font-black pb-6 text-text leading-tight">
+              გახდი საკუთარი ბარის მთავარი
+              <span className="text-accent block md:inline"> მიქსოლოგი</span>
+            </p>
+            <p className="text-black text-base md:text-lg leading-relaxed">
+              ინტერაქციული გაიდები, ზუსტი პროპორციები და საიდუმლო ინგრედიენტები
+              იდეალური სასმელების დასამზადებლად.
+            </p>
+          </div>
 
-          <p>
-            ინტერაქციული გაიდები, ზუსტი პროპორციები და საიდუმლო ინგრედიენტები
-            იდეალური სასმელების დასამზადებლად.
-          </p>
+          <div className=" w-100 flex justify-center items-center ">
+            <img
+              src="/Layer-1.png"
+              className="w-full max-w-md drop-shadow-xl"
+              alt="Main Cocktail"
+            />
+          </div>
         </div>
-        <div className=" w-187.5 flex flex-col justify-center items-center">
-          <img src={home} className="w-125" />
-        </div>
 
+        <div className="w-full pb-16 px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-8">
+              <h2 className=" flex justify-center  text-4xl font-black mt-20  ">
+                აირჩიე სასურველი გემო და ალკოჰოლის ბაზა
+              </h2>
 
-        
-      </div>
-
-      <div className="flex w-300 h-20 items-center justify-center  m-auto mt-20  ">
-
+              <div
+                className=" flex justify-around w-6xl  m-auto my-12
+              "
+              >
                 <MenuFilter />
+              </div>
 
+              <div className=" flex flex-wrap justify-between items-center pt-10">
+                <Cards />
+              </div>
+            </div>
+          </div>
         </div>
-                
+      </div>
     </>
   );
 }
